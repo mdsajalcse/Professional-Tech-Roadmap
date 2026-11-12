@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>System Admin & Software Engineering Roadmap</title>
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+ 
+</head>
+<body>
+  <header>
+    <div class="header-container">
+      <h1>System Admin + Linux Admin + Software Engineering Roadmap</h1>
+      <p class="subtitle">Track your learning progress across enterprise IT, system administration, and software development.</p>
+      
+      <div class="overall-progress-box">
+        <div class="progress-info">
+          <span>Overall Completion</span>
+          <span id="overall-percentage">0%</span>
+        </div>
+        <div class="progress-bar-bg">
+          <div id="overall-progress-bar" class="progress-bar-fill" style="width: 0%;"></div>
+        </div>
+      </div>
+
+      <div class="controls-bar">
+        <input type="text" id="search-input" placeholder="Search topics (e.g. Cisco, Oracle, Linux)...">
+        <button id="reset-btn" class="btn btn-secondary">Reset Progress</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="roadmap-grid">
+    <!-- Track 1: System Administrator -->
+    <section class="card" id="track-sysadmin">
+      <div class="card-header">
+        <div class="icon-wrapper sysadmin-icon">
+          <svg viewBox="0 0 24 24" width="48" height="48" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+            <circle cx="12" cy="7" r="4"></circle>
+            <rect x="15" y="13" width="7" height="6" rx="1"></rect>
+            <path d="M18.5 13v-2"></path>
+          </svg>
+        </div>
+        <h2>System Administrator</h2>
+        <div class="track-progress">
+          <span id="sysadmin-count">0/11 completed</span>
+          <div class="mini-progress-bg"><div id="sysadmin-bar" class="mini-progress-fill"></div></div>
+        </div>
+      </div>
+      
+      <ul class="topic-list" data-track="sysadmin">
+        <li data-id="sys-1"><span class="bullet">▶</span> <span class="topic-title">IT Essentials</span></li>
+        <li data-id="sys-2"><span class="bullet">▶</span> <span class="topic-title">Cisco CCNA (200-301)</span></li>
+        <li data-id="sys-3"><span class="bullet">▶</span> <span class="topic-title">MikroTik</span></li>
+        <li data-id="sys-4"><span class="bullet">▶</span> <span class="topic-title">Windows Server</span></li>
+        <li data-id="sys-5"><span class="bullet">▶</span> <span class="topic-title">Fortinet FortiGate Firewall</span></li>
+        <li data-id="sys-6"><span class="bullet">▶</span> <span class="topic-title">Palo Alto Next-Gen Firewall</span></li>
+        <li data-id="sys-7"><span class="bullet">▶</span> <span class="topic-title">Microsoft 365 Email</span></li>
+        <li data-id="sys-8"><span class="bullet">▶</span> <span class="topic-title">On-Premise Email Servers</span></li>
+        <li data-id="sys-9"><span class="bullet">▶</span> <span class="topic-title">Issabel PABX Server Setup</span></li>
+        <li data-id="sys-10"><span class="bullet">▶</span> <span class="topic-title">Grandstream, Fanvil & Dinstar VoIP Gateways & IP PBX / Phones</span></li>
+        <li data-id="sys-11"><span class="bullet">▶</span> <span class="topic-title">CCTV Camera & NVR/DVR Configuration</span></li>
+      </ul>
+
+      <div class="card-footer">
+        <span class="badge badge-sysadmin">System Administrator</span>
+      </div>
+    </section>
+
+    <!-- Track 2: Linux Administrator -->
+    <section class="card" id="track-linux">
+      <div class="card-header">
+        <div class="icon-wrapper linux-icon">
+          <svg viewBox="0 0 100 100" width="48" height="48">
+            <circle cx="50" cy="50" r="46" fill="#00a8e8"/>
+            <ellipse cx="50" cy="38" rx="16" ry="20" fill="#222"/>
+            <circle cx="44" cy="34" r="3" fill="#fff"/>
+            <circle cx="56" cy="34" r="3" fill="#fff"/>
+            <path d="M 45 42 Q 50 48 55 42 Q 50 50 45 42" fill="#ffb703"/>
+            <ellipse cx="50" cy="65" rx="22" ry="20" fill="#fff"/>
+            <ellipse cx="50" cy="65" rx="18" ry="16" fill="#222"/>
+            <ellipse cx="32" cy="80" rx="8" ry="5" fill="#ffb703"/>
+            <ellipse cx="68" cy="80" rx="8" ry="5" fill="#ffb703"/>
+          </svg>
+        </div>
+        <h2>Linux Administrator</h2>
+        <div class="track-progress">
+          <span id="linux-count">0/3 completed</span>
+          <div class="mini-progress-bg"><div id="linux-bar" class="mini-progress-fill"></div></div>
+        </div>
+      </div>
+      
+      <ul class="topic-list" data-track="linux">
+        <li data-id="lin-1"><span class="bullet">▶</span> <span class="topic-title">Red Hat Enterprise Linux System Administration I</span></li>
+        <li data-id="lin-2"><span class="bullet">▶</span> <span class="topic-title">Red Hat Enterprise Linux System Administration II</span></li>
+        <li data-id="lin-3"><span class="bullet">▶</span> <span class="topic-title">Red Hat Enterprise Linux System Administration III</span></li>
+      </ul>
+
+      <div class="card-footer">
+        <span class="badge badge-linux">Linux Administrator</span>
+      </div>
+    </section>
+
+    <!-- Track 3: Software Engineering -->
+    <section class="card" id="track-swe">
+      <div class="card-header">
+        <div class="icon-wrapper swe-icon">
+          <svg viewBox="0 0 24 24" width="48" height="48" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <ellipse cx="12" cy="6" rx="9" ry="3" stroke="#00b4d8" fill="#00b4d8" fill-opacity="0.1"></ellipse>
+            <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3" stroke="#00b4d8"></path>
+            <path d="M21 18c0 1.66-4 3-9 3s-9-1.34-9-3" stroke="#00b4d8"></path>
+            <polyline points="9 11 12 14 15 11" stroke="#00b4d8" fill="none"></polyline>
+          </svg>
+        </div>
+        <h2>Software Engineering</h2>
+        <div class="track-progress">
+          <span id="swe-count">0/6 completed</span>
+          <div class="mini-progress-bg"><div id="swe-bar" class="mini-progress-fill"></div></div>
+        </div>
+      </div>
+      
+      <ul class="topic-list" data-track="swe">
+        <li data-id="swe-1"><span class="bullet">▶</span> <span class="topic-title">Oracle Database 19c : SQL</span></li>
+        <li data-id="swe-2"><span class="bullet">▶</span> <span class="topic-title">Oracle Database 19c : Program with PL/SQL</span></li>
+        <li data-id="swe-3"><span class="bullet">▶</span> <span class="topic-title">Oracle Fusion Middleware 11g : Build Applications with Oracle Forms</span></li>
+        <li data-id="swe-4"><span class="bullet">▶</span> <span class="topic-title">Oracle Report Developer: Build Reports</span></li>
+        <li data-id="swe-5"><span class="bullet">▶</span> <span class="topic-title">Programming in HTML5 with JavaScript & CSS3</span></li>
+        <li data-id="swe-6"><span class="bullet">▶</span> <span class="topic-title">Oracle Application Express (Apex)</span></li>
+      </ul>
+
+      <div class="card-footer">
+        <span class="badge badge-swe">Software Engineering</span>
+      </div>
+    </section>
+  </main>
+
+  <script src="/assets/js/script.js"></script>
+</body>
+</html>
